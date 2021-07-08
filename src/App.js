@@ -1,13 +1,17 @@
 import './App.css';
 import Header from './Header';
+import Sidebar from './Sidebar'
+import RecommendedVideos from './RecommendedVideos';
 
 function App() {
   return (
   <div className="app"> 
     {/* <h1>YouTube Clone</h1> */}
     <Header />
-    {/* {Sidebar} */}
-    {/* {RecommendedVideos} */}
+    <div className="app__page">
+      <Sidebar />
+      <RecommendedVideos />
+    </div>
   </div>
   );
 }
